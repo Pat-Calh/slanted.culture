@@ -1,0 +1,68 @@
+Slanted Culture Website Project Plan
+
+1. Vision & Goals
+Build a visually-driven, modern, mobile-friendly site for a car/art/photography brand.
+Blend community, storytelling, and e-commerce.
+Take inspiration from quiet.racing, howl-out.com, officialghostracing.com, and nappyboyautomotive.com.
+
+2. Core Features
+Essential Pages
+- Home: Large visuals, brand story, newsletter sign-up, social links.
+- Shop/Gallery: Product/art/photography showcase (expandable to e-commerce).
+- About/Team: Brand mission, bios, photos.
+- Events/News/Blog: Community updates, event announcements, articles.
+- Contact: Simple form, email, social links.
+- FAQ: Answers to common questions.
+
+Optional/Advanced
+- Password-protected landing: For exclusive drops or launches.
+- Newsletter Integration: (e.g., Mailchimp, Buttondown)
+- Social Media Feeds: Instagram, YouTube, TikTok, etc.
+- E-commerce: Shopify Storefront API, Snipcart, or Stripe (when ready)
+- CMS: Markdown or headless CMS (Sanity, Contentful, etc.) for easy updates.
+
+3. Design & UX
+- Bold, minimalist, and mobile-first.
+- Large product and event visuals.
+- Simple, intuitive navigation.
+- Consistent branding and color palette.
+- Responsive layouts for all devices.
+
+4. Technical Stack
+- Frontend: Next.js (React) or Astro (static-first, very fast)
+- Styling: Tailwind CSS or styled-components (for rapid, modern UI)
+- Content: Markdown files or headless CMS
+- E-commerce: Start with static galleries, add Shopify/Snipcart/Stripe later
+- Newsletter: Mailchimp or similar
+- Hosting: Netlify (CI/CD, fast, free tier)
+- Version Control: Git + GitHub (already set up)
+
+5. Roadmap & Milestones
+1. Planning & Design
+   - Finalize brand assets (logo, colors, fonts, imagery)
+   - Create wireframes or mood boards (optional)
+2. Initial Scaffold
+   - Set up Next.js or Astro project
+   - Implement basic routing and page structure
+3. Core Pages
+   - Home, Gallery/Shop, About, Contact, FAQ, Events/Blog
+4. Styling & Responsiveness
+   - Apply brand styles, ensure mobile-first design
+5. Content Integration
+   - Add sample products, team bios, events, etc.
+6. Advanced Features
+   - Add newsletter sign-up
+   - Integrate social feeds
+   - Add password protection (if needed)
+   - Set up e-commerce (when ready)
+7. Testing & Launch
+   - Test on all devices
+   - Deploy to Netlify
+
+6. Next Steps
+- Review this plan and suggest any changes or additions.
+- When you’re ready, I can scaffold the project and guide you through customization.
+
+Hosting/Deployment: Netlify will be used for deploying and hosting the site.
+
+This plan is ready to share for review.
