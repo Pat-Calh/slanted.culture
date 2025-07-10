@@ -27,18 +27,17 @@ export default function RootLayout({
       <body className="bg-black text-white min-h-screen flex flex-col font-sans">
         {/* Navigation Bar */}
         <nav className="w-full px-6 py-4 flex justify-between items-center border-b border-white/10 bg-black/80 sticky top-0 z-50">
-          <div className="text-2xl font-bold tracking-widest uppercase">
-            Slanted Culture
-          </div>
+          <div className="text-2xl font-bold tracking-widest uppercase">Slanted Culture</div>
           <ul className="flex gap-6 text-lg font-medium">
-            <li><a href="/" className="hover:text-accent transition">Home</a></li>
-            <li><a href="/shop" className="hover:text-accent transition">Shop/Gallery</a></li>
-            <li><a href="/about" className="hover:text-accent transition">About</a></li>
-            <li><a href="/events" className="hover:text-accent transition">Events/Blog</a></li>
-            <li><a href="/faq" className="hover:text-accent transition">FAQ</a></li>
-            <li><a href="/contact" className="hover:text-accent transition">Contact</a></li>
+            <li><a href="/" className="transition hover:text-accent">Home</a></li>
+            <li><a href="/shop" className="transition hover:text-accent">Shop/Gallery</a></li>
+            <li><a href="/about" className="transition hover:text-accent">About</a></li>
+            <li><a href="/events" className="transition hover:text-accent">Events/Blog</a></li>
+            <li><a href="/faq" className="transition hover:text-accent">FAQ</a></li>
+            <li><a href="/contact" className="transition hover:text-accent">Contact</a></li>
           </ul>
         </nav>
+
         {/* Main Content */}
         <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-8">
           {children}
