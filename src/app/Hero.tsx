@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -15,7 +14,13 @@ export default function Hero() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="relative z-10 my-2"
       >
-        <Image src="/SlantedLogo.png" alt="Slanted Culture Logo" width={360} height={160} className="w-auto h-auto max-w-[360px]" />
+        <img 
+          src="/SlantedLogo.png" 
+          alt="Slanted Culture Logo" 
+          className="w-auto h-auto max-w-[360px]"
+          width="360"
+          height="160"
+        />
       </motion.div>
       <a href="/shop" className="relative z-10 inline-block px-8 py-3 bg-white/30 text-black font-bold rounded-full shadow-2xl hover:bg-accent transition text-lg mt-2">
         Explore the Gallery
