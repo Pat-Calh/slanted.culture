@@ -1,0 +1,12 @@
+# Browser support configuration
+# See https://github.com/browserslist/browserslist for full syntax
+
+# Learning-focused targets (ideal for modern feature exploration)
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Safari versions
+last 2 Edge versions
+
+# Fallback for wider compatibility
+> 0.5%
+not dead
