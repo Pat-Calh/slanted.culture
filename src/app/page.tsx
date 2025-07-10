@@ -6,6 +6,7 @@ export default function Home() {
       <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight uppercase drop-shadow-lg">
         Slanted Culture
       </h1>
+      <Image src="/SlantedLogo.png" alt="Slanted Culture Logo" width={220} height={100} className="my-4 mx-auto w-auto h-auto max-w-[220px]" />
       <p className="max-w-xl text-lg md:text-2xl text-white/80 font-medium">
         Car culture, art, and photography—where the streets meet creativity. Join the movement.
       </p>
