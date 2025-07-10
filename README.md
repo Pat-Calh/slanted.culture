@@ -52,6 +52,13 @@ npm test
 npm run dev
 ```
 
+## 🌐 Live Site
+
+View the deployed application at:  
+[https://slantedculture.netlify.app/](https://slantedculture.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-DEPLOY-ID/deploy-status)](https://app.netlify.com/sites/slantedculture/deploys)
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
