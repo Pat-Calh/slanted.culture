@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="bg-black text-white min-h-screen flex flex-col font-sans">
         {/* Navigation Bar */}
         <NavBar />
