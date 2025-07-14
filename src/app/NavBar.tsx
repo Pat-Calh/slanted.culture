@@ -17,7 +17,7 @@ export default function NavBar() {
   // Animation variants for mobile menu
   const menuVariants = {
     closed: { x: "100%", opacity: 0, transition: { duration: 0.3 } },
-    open: { x: 0, opacity: 1, transition: { type: "spring", stiffness: 300, damping: 30 } },
+    open: { x: 0, opacity: 1, transition: { type: "spring" as const, stiffness: 300, damping: 30 } },
   };
 
   return (
