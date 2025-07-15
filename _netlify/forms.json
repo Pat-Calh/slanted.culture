@@ -1,0 +1,8 @@
+[
+  {
+    "name": "contact",
+    "endpoint": "/thank-you",
+    "fields": ["name", "email", "message"],
+    "honeypot": "bot-field"
+  }
+]
