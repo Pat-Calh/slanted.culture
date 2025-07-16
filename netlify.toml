@@ -1,3 +1,18 @@
 [build]
   command = "npm run build"
   publish = ".next"
+  functions = ".netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@netlify/plugin-nextjs"]
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[dev]
+  command = "npm run dev"
+  targetPort = 3000
+  publish = ".next"
+  framework = "#custom"
+  autoLaunch = false
