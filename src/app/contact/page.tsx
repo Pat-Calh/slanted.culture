@@ -2,18 +2,41 @@ export default function Contact() {
   return (
     <section className="py-12 max-w-xl mx-auto text-center">
       <h2 className="text-4xl font-bold mb-8 uppercase">Contact</h2>
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfxGGQFb91KgK1LvV_dy5Qy74ncxLqwcm6sg3esISkiTXmydw/viewform?embedded=true"
-        width="100%"
-        height="700"
-        frameBorder="0"
-        marginHeight={0}
-        marginWidth={0}
-        title="Contact Form"
-        style={{ background: "white", borderRadius: "8px", border: "1px solid #ccc" }}
+      <form
+        name="contact"
+        method="POST"
+        action="/thank-you"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        className="flex flex-col gap-4 items-center"
       >
-        Loading…
-      </iframe>
+        <input type="hidden" name="form-name" value="contact" />
+        <p className="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          className="w-full px-4 py-2 rounded bg-white text-black placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          className="w-full px-4 py-2 rounded bg-white text-black placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          className="w-full px-4 py-2 rounded bg-white text-black placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent"
+          rows={4}
+          required
+        />
+        <button type="submit" className="px-6 py-2 bg-rose-600 text-white font-bold rounded border border-rose-700 shadow hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-400 transition">Send</button>
+      </form>
     </section>
   );
 }
