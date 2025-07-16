@@ -4,15 +4,21 @@
   functions = ".netlify/functions"
 
 [build.environment]
+  NEXT_TELEMETRY_DISABLED = "1"
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NEXT_USE_NETLIFY_EDGE = "false"
+  NODE_VERSION = "18"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+  [plugins.inputs]
+    enableImageOptimization = false
 
 [functions]
   node_bundler = "esbuild"
@@ -24,3 +30,8 @@
   publish = ".next"
   framework = "next"
   autoLaunch = false
+
+# Required for Next.js 13+ with app directory
+[context.production]
+  command = "npm run build"
+  environment = { NODE_VERSION = "18" }
