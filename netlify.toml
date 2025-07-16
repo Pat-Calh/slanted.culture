@@ -3,16 +3,24 @@
   publish = ".next"
   functions = ".netlify/functions"
 
-[functions]
-  node_bundler = "esbuild"
-  external_node_modules = ["@netlify/plugin-nextjs"]
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@netlify/plugin-nextjs"]
 
 [dev]
   command = "npm run dev"
   targetPort = 3000
   publish = ".next"
-  framework = "#custom"
+  framework = "next"
   autoLaunch = false
