@@ -19,40 +19,37 @@ export default function Contact() {
         <div className="space-y-6">
           <div>
             <label className="block text-gray-300 text-sm font-medium mb-2">
-              Name
+              Your Name
             </label>
             <input 
               type="text" 
               name="name" 
               required 
               className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-all duration-200"
-              placeholder="Your name"
             />
           </div>
           
           <div>
             <label className="block text-gray-300 text-sm font-medium mb-2">
-              Email
+              Your Email
             </label>
             <input 
               type="email" 
               name="email" 
               required 
               className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-all duration-200"
-              placeholder="your.email@example.com"
             />
           </div>
           
+
           <div>
             <label className="block text-gray-300 text-sm font-medium mb-2">
               Message
             </label>
             <textarea 
-              name="message" 
-              required 
+              name="message"
               rows={4}
               className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent transition-all duration-200 resize-none"
-              placeholder="Your message here..."
             ></textarea>
           </div>
           
