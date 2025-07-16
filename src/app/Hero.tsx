@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -22,9 +23,9 @@ export default function Hero() {
           height="160"
         />
       </motion.div>
-      <a href="/shop" className="relative z-10 inline-block px-8 py-3 bg-white/30 text-black font-bold rounded-full shadow-2xl hover:bg-accent transition text-lg mt-2">
+      <Link href="/shop" className="relative z-10 inline-block px-8 py-3 bg-white/30 text-black font-bold rounded-full shadow-2xl hover:bg-accent transition text-lg mt-2">
         Explore the Gallery
-      </a>
+      </Link>
       <p
         className="relative z-10 max-w-xl text-lg md:text-2xl text-white/80 font-medium mt-2 drop-shadow"
         style={{ textShadow: '0 2px 8px rgba(0,0,0,0.45)' }}

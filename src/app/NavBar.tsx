@@ -1,13 +1,14 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/shop', label: 'Shop/Gallery' },
-  { href: '/about', label: 'About' },
+  // { href: '/about', label: 'About' }, // Temporarily hidden
   { href: '/events', label: 'Events/Blog' },
-  { href: '/faq', label: 'FAQ' },
+  // { href: '/faq', label: 'FAQ' }, // Temporarily hidden
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -42,18 +43,21 @@ export default function NavBar() {
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
             }}
           >
-            <motion.a
+            <Link
               href={link.href}
               className="transition font-medium px-1 py-0.5 rounded"
               style={{ display: 'inline-block' }}
-              whileHover={{
-                color: '#e11d48',
-                textShadow: '0 0 8px #e11d48, 0 0 16px #e11d48, 0 0 32px #e11d48',
-              }}
-              transition={{ type: 'spring', stiffness: 350, damping: 20 }}
             >
-              {link.label}
-            </motion.a>
+              <motion.span
+                whileHover={{
+                  color: '#e11d48',
+                  textShadow: '0 0 8px #e11d48, 0 0 16px #e11d48, 0 0 32px #e11d48',
+                }}
+                transition={{ type: 'spring', stiffness: 350, damping: 20 }}
+              >
+                {link.label}
+              </motion.span>
+            </Link>
           </motion.li>
         ))}
       </motion.ul>
@@ -85,13 +89,21 @@ export default function NavBar() {
             <ul className="flex flex-col gap-6 w-full items-center text-white">
               {navLinks.map((link) => (
                 <li key={link.href} className="w-full text-center">
-                  <a
+                  <Link
                     href={link.href}
                     className="block w-full text-lg font-semibold py-3 rounded hover:bg-[#27272a] transition"
                     onClick={() => setMenuOpen(false)}
                   >
-                    {link.label}
-                  </a>
+                    <motion.span
+                      whileHover={{
+                        color: '#e11d48',
+                        textShadow: '0 0 8px #e11d48, 0 0 16px #e11d48, 0 0 32px #e11d48',
+                      }}
+                      transition={{ type: 'spring', stiffness: 350, damping: 20 }}
+                    >
+                      {link.label}
+                    </motion.span>
+                  </Link>
                 </li>
               ))}
             </ul>
